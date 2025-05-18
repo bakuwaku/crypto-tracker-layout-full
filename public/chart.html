@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Charts - Crypto Tracker</title>
+  <meta name="description" content="View historical crypto price charts." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark-theme">
+  <header class="header">
+    <h1>🚀 Crypto Market Explorer</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="alerts.html">Alerts</a>
+      <a href="chart.html">Charts</a>
+    </nav>
+  </header>
+  <main class="content">
+    <h2>Price Chart</h2>
+<input type="text" id="coin_id" value="bitcoin" />
+<button onclick="loadChart()">Load Chart</button>
+<canvas id="priceChart" width="600" height="400"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="chart.js"></script>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2025 CryptoTracker</p>
+  </footer>
+</body>
+</html>

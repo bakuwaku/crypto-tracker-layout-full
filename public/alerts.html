@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Set Alerts - Crypto Tracker</title>
+  <meta name="description" content="Create price alerts for your favorite cryptocurrencies." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark-theme">
+  <header class="header">
+    <h1>🚀 Crypto Market Explorer</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="alerts.html">Alerts</a>
+      <a href="chart.html">Charts</a>
+    </nav>
+  </header>
+  <main class="content">
+    <h2>Set a Price Alert</h2>
+<form id="alert-form">
+  <input type="text" id="coin_id" placeholder="Coin ID (e.g., bitcoin)" required />
+  <input type="number" id="target_price" placeholder="Target Price" required />
+  <button type="submit">Save Alert</button>
+</form>
+<p id="status"></p>
+<script src="alerts.js"></script>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2025 CryptoTracker</p>
+  </footer>
+</body>
+</html>
